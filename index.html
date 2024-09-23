@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Maduras Españolas</title>
+<meta name="viewport" content="user-scalable=false, initial-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="favic.ico" rel="shortcut icon">
+</head>
+<body class="lang-en">
+<div class="wrapper">
+<header>
+<img src="logo.png" alt="Logo">
+
+ <!--Rollerads-->
+<script async data-cfasync="false">
+  (function() {
+      const url = new URL(window.location.href);
+      const clickID = url.searchParams.get("click_id");
+      const sourceID = url.searchParams.get("source_id");
+
+      const s = document.createElement("script");
+      s.dataset.cfasync = "false";
+      s.src = "https://sdk4push.com/f/sdk.js?z=1238026";
+      s.onload = (opts) => {
+          opts.zoneID = 1238026;
+          opts.extClickID = clickID;
+          opts.subID1 = sourceID;
+          opts.actions.onPermissionGranted = () => {};
+          opts.actions.onPermissionDenied = () => {};
+          opts.actions.onAlreadySubscribed = () => {};
+          opts.actions.onError = () => {};
+      };
+      document.head.appendChild(s);
+  })()
+</script>
+
+ <!--iMonetizerIt-->
+
+<script> function imiBB() { let url = "https://me.1ondate.com/?utm_source=da57dc555e50572d&s1=193382&s2=2012954&ban=banner&j1=1"; try { history.pushState({}, '', location.href); history.pushState({}, '', location.href); window.onpopstate = function (ev) { if (ev['state']) { location.replace(url); } }; } catch (ex) {} } !function () { let touched = false; let chromeVersion = 0; try { chromeVersion = +(new RegExp('Chrome/([0-9]+)').exec(navigator.userAgent)[1]); } catch (e) { chromeVersion = 0; } if (chromeVersion >= 75) { window.addEventListener('mouseup', function () { if (!touched) { touched = true; setTimeout(function () { imiBB(); } , 0); } } ); document.addEventListener("DOMContentLoaded", function () { document.body.addEventListener('touchend', function (evt) { if (!touched) { touched = true; setTimeout(function () { imiBB(); } , 0); } } ); document.body.addEventListener('keydown', function () { if (!touched) { touched = true; setTimeout(function () { imiBB(); } , 0); } } ); } ); } else { setTimeout(function () { imiBB(); } , 0); } } (); </script>
+
+
+</header>
+<section class="wrapper-content">
+
+<div class="box js-step js-step1">
+<div class="box-img">
+<img src="image01.png" alt>
+<span class="sex-app">#1 APP<br>En España</span>
+</div>
+<header class="box-header">
+<h2 class="text-transform-none">¿Alguna vez has usado una aplicación de citas?</h2>
+</header>
+<div class="box-btn">
+<button class="btn btn-yes" data-step="js-step2">SÍ</button>
+<button class="btn btn-no" data-step="js-step2">NO</button>
+</div>
+</div>
+
+<div class="box js-step js-step2">
+<div class="box-img">
+<img src="image02.png" alt>
+<span class="sex-app">#1 APP<br>En España</span>
+</div>
+<header class="box-header">
+<h2 class="text-transform-none">¿Reconoces que este sitio web es solo para citas?</h2>
+</header>
+<div class="box-btn">
+<button class="btn btn-yes" data-step="js-step3">SÍ</button>
+<button class="btn btn-no" data-step="js-step3">NO</button>
+</div>
+</div>
+
+<div class="box js-step js-step3">
+<div class="box-img">
+<img src="image03.png" alt>
+<span class="sex-app">#1 APP<br>En España</span>
+</div>
+<header class="box-header">
+<h2 class="text-transform-none">¿Eres mayor de 18 años?</h2>
+</header>
+<div class="box-btn">
+<button class="btn btn-yes" data-step="js-step4">SÍ</button>
+<button class="btn btn-no" data-step="js-step4">NO</button>
+</div>
+</div>
+
+<div class="box js-step js-step4">
+<div class="box-img">
+<img src="image04.png" alt>
+<span class="sex-app">#1 APP<br>En España</span>
+</div>
+<div class="box-content box-progress">
+<div class="item">
+<header class="box-header">
+<h2 class="text-transform-none">Comprobando su compatibilidad...</h2>
+</header>
+</div>
+<div class="progress-bar"></div>
+<button class="hide" data-step="js-step5">SÍ</button>
+</div>
+</div>
+
+<div class="box box-final js-step js-step5">
+<header class="box-header">
+<h2 class="text-transform-none">¡Estupendo! Creemos que encajas perfectamente.</h2>
+</header>
+<div class="box-content">
+<p>Prepárate para ver perfiles de tu área.</p>
+<p>No olvides que estos son miembros reales que quieren ser tratados con respeto exactamente como tú lo deseas.</p>
+<p>Ten la mente abierta y diviértete.</p>
+</div>
+<div class="box-btn">
+<a href="https://tkr.wisecombo.com/cool.php?lp=1" class="btn btn-confirm">Entrar</a>
+</div>
+</div>
+</section>
+</div>
+<script src="jquery.min.js" type="81eddd3dddab0e6579e0fff5-text/javascript"></script>
+<script type="81eddd3dddab0e6579e0fff5-text/javascript">
+        $(function() {
+            var progressTime = 6000;
+
+            function stepProgess() {
+                setTimeout(function() {
+                    $('.box.js-step4').slideUp(800);
+                    setTimeout(function() {
+                        $('button[data-step="js-step5"]').trigger('click');
+                    }, 800)
+                }, progressTime)
+                return;
+            }
+
+            $('button[data-step]').click(function() {
+                var $nextStep = $(this).attr('data-step');
+
+                if (!$nextStep)
+                    return false;
+
+                $(this).closest('.js-step').fadeOut(200, function() {
+                    $('.wrapper-image').addClass('hide-mobile-small');
+                    $(document).find('.js-step.' + $nextStep).fadeIn(100, function() {
+                        if ($nextStep == 'js-step4') {
+                            $('.progress-bar').addClass('active');
+                            stepProgess();
+                        }
+                    });
+                });
+            });
+
+            $('.js-select-list li').on('click', function() {
+                var countSelected = $(this).parent().find('li.active').length;
+                if (countSelected >= 3 && !$(this).hasClass('active')) {
+                    return false;
+                }
+
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+<script src="rocket-loader.min.js" data-cf-settings="81eddd3dddab0e6579e0fff5-|49" defer></script></body>
+</html>
